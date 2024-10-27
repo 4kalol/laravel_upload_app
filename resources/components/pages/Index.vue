@@ -1,10 +1,11 @@
 <template>
     <div>
-      <h1>Hello World</h1>
-      <button @click="navigateTo('/test/')">Home</button>
-      <button @click="navigateTo('/test/about')">About</button>
-      <button @click="navigateTo('/test/contact')">Contact</button>
-      <router-view></router-view>
+        <!-- 親コンポーネント -->
+        <h1>File Uploader</h1>
+        <button @click="navigateTo('/image')">Image</button>
+        <button @click="navigateTo('/video')">Video</button>
+        <button @click="navigateTo('/audio')">Audio</button>
+        <router-view></router-view>
     </div>
   </template>
 
